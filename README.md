@@ -25,6 +25,7 @@ From this factsheet I need the following newest information collected into excel
 * argument splited by semicolon, you can use default value like this(`scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp`), this will use default value for `sector` argument.
 * This is a table of all available arguments
   * `market`
+  
   | argument value | this argument refers to |
   |------|---------------|
   |nordic|Market: Nordic|
