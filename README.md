@@ -21,19 +21,53 @@ From this factsheet I need the following newest information collected into excel
 
 # RUN
 * You should navigate to the `nasdapdenmark` folder, have Chrome newest version installed and of course scrapy installed with selenium.
-* This is an example start script `scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp -a sector=energy;mat`
-* argument splited by semicolon, you can use default value like this(`scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp`), this will use default value for `sector` argument.
+* This is an example start script 
+`scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp -a sector=energy;mat`
+* argument splited by semicolon, you can use default value like this
+(`scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp`), 
+this will use default value for `sector` argument.
 * This is a table of all available arguments
   * `market`
   
-  | argument value | this argument refers to |
+  | value | this argument refers to |
   |------|---------------|
   |nordic|Market: Nordic|
   |cph|Market: CPH|
   |sto|Market: STO|
   |hel|Market: HEL|
   |ice|Market: ICE|
-
+  
+  * `segment`
+  
+  | value | this argument refers to |
+  |-------|--------------|
+  |large|Large Cap|
+  |mid|Mid Cap|
+  |small|Small Cap|
+  |nws|Norwegian shares|
+  
+  * `other`
+ 
+  | value | this argument refers to |
+  |--------|-----------|
+  | obs | Observation status |
+  |extlist|External list|
+  |lp|Liquidity Provider|
+  
+  * `sector`
+  | value | this argument refers to |
+  |-----|-------------|
+  |energy| Energy and Oil |
+  |mat| Material |
+  |industry| Industry |
+  |goods| Consumer-Goods |
+  |services| Consumer-Services|
+  |health | healthy-care |
+  |telecom| telecommunication |
+  |utility| Utility |
+  |finance| Finance |
+  |tech| Technology |
+  
 # Example Output
 
 | volume | last | industry | fullname | turnover | positiveornegative | ccy | pdflink | bid | ask | percent |
