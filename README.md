@@ -20,6 +20,18 @@ From this factsheet I need the following newest information collected into excel
 "The summation of the most recent Earnings Per Share" on the second page under Quarterly Results
 
 # RUN
+* You should navigate to the `nasdapdenmark` folder, have Chrome newest version installed and of course scrapy installed with selenium.
+* This is an example start script `scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp -a sector=energy;mat`
+* argument splited by semicolon, you can use default value like this(`scrapy crawl spider -o output.csv -t csv -a market=nordic;cph -a segment=large;mid -a other=obs;lp`), this will use default value for `sector` argument.
+* This is a table of all available arguments
+  * `market`
+  | argument value | this argument refers to |
+  |------|---------------|
+  |nordic|Market: Nordic|
+  |cph|Market: CPH|
+  |sto|Market: STO|
+  |hel|Market: HEL|
+  |ice|Market: ICE|
 
 # Example Output
 
